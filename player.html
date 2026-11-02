@@ -1,0 +1,7 @@
+<!doctype html><html lang="kk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Quiz Arena</title><link rel="stylesheet" href="/style.css"></head><body class="player-bg">
+<div class="phone-wrap"><div class="brand">⚖️ QUIZ <span>ARENA</span></div>
+<section id="joinBox" class="glass"><div class="eyebrow">YESSENOV UNIVERSITY</div><h1>Ойынға қосыл</h1><p class="muted">Атыңды енгізіп, командаңның құрылуын күт.</p><input id="name" maxlength="30" placeholder="Аты-жөнің"><button id="joinBtn" class="primary">Ойынға кіру →</button><p id="err" class="error"></p></section>
+<section id="waitBox" class="glass hidden"><div class="pulse">✦</div><h2 id="welcome">Қош келдің!</h2><p class="muted">Жүргізуші қатысушыларды командаларға бөліп жатыр.</p><div id="teamInfo" class="team-card">Команда әлі анықталған жоқ</div><div id="leaderBadge"></div></section>
+<section id="questionBox" class="glass hidden"><div class="row"><span id="roundLabel" class="tag">1-РАУНД</span><span id="timer" class="timer">30</span></div><div id="topic" class="eyebrow"></div><h2 id="question"></h2><div id="choices" class="choices"></div><p id="answerMsg" class="muted"></p></section>
+<section id="finishBox" class="glass hidden"><div class="trophy">🏆</div><h1>Ойын аяқталды!</h1><p>Нәтижені негізгі экраннан көріңіз.</p></section>
+</div><script src="/socket.io/socket.io.js"></script><script src="/player.js"></script></body></html>
